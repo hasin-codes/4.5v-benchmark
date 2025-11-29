@@ -15,8 +15,29 @@ export const standardScenarios: BenchmarkScenario[] = [
         imagePlaceholder: "/placeholder-image.jpg",
         averagePrompt: "Where is this photo taken?",
         powerPrompt: "Analyze this image for geographic clues like architecture, lighting, and water features. Provide a step-by-step reasoning to identify the exact location, including country, city, and landmark. Consider any seasonal or time-of-day hints.",
-        averageOutput: ``,
-        powerOutput: ``
+        averageOutput: `
+
+The photo features the Eiffel Tower, a globally recognized landmark located in Paris, France. The tower is illuminated at night, with surrounding elements like water (likely the Seine River) and city lights visible. Therefore, the location is Paris, France.`,
+        powerOutput: `
+
+To determine the location, we analyze key geographic clues:  
+
+1. **Architecture**: The central structure is the Eiffel Tower, an iconic iron lattice tower in Paris, France. Its distinctive shape and illumination pattern (golden lights against the night sky) are unmistakable.  
+2. **Lighting**: The scene is set at night, evidenced by the dark sky, artificial lighting on the tower, and the presence of a moon. The Eiffel Tower’s nightly light display is a hallmark of its operation.  
+3. **Water Features**: A body of water (likely the Seine River) is visible in the foreground, with boats docked along the shore. The Seine flows through Paris and is adjacent to the Eiffel Tower, confirming the riverine context.  
+
+
+### Step-by-Step Reasoning:  
+- **Landmark Identification**: The Eiffel Tower is globally recognized and located only in Paris, France. No other structure matches its design.  
+- **City and Country**: Paris is the capital of France, and the Eiffel Tower is situated in the Champ de Mars area, near the Seine.  
+- **Time of Day/Season**: Nighttime (dark sky, artificial lighting) with a visible moon suggests evening hours. While seasonal cues (e.g., foliage) are minimal, the focus remains on the landmark’s universal recognition.  
+
+
+**Final Answer**: The image depicts the Eiffel Tower in Paris, France, captured at night with the Seine River in the foreground.  
+
+Country: France  
+City: Paris  
+Landmark: Eiffel Tower`
     },
     {
         id: "std-2",
@@ -24,8 +45,36 @@ export const standardScenarios: BenchmarkScenario[] = [
         imagePlaceholder: "/placeholder-image.jpg",
         averagePrompt: "Guess the location in this image.",
         powerPrompt: "Examine the terrain, vegetation, and structure in this foggy landscape image. Deduce the location with historical context, specifying continent, country, and specific section if possible. Explain visual cues like wall patterns.",
-        averageOutput: ``,
-        powerOutput: ``
+        averageOutput: `
+
+The image depicts a section of the Great Wall of China, characterized by its iconic stone structures, watchtowers, and winding path across mountainous terrain, partially shrouded in mist. This renowned historical monument is located in China.`,
+        powerOutput: `
+
+To determine the location, we analyze **terrain**, **vegetation**, **structure**, and **historical context**:  
+
+### 1. Terrain & Vegetation  
+The image shows a mountainous landscape with rolling ridges covered in dense, temperate vegetation (likely deciduous forests). This topography is characteristic of northern China’s mountain ranges, where the Great Wall was strategically built to follow natural contours.  
+
+
+### 2. Structural Cues  
+The prominent feature is a massive stone-and-brick wall with **watchtowers** (beacon towers) atop peaks. Key details include:  
+- **Wall pattern**: It winds continuously along ridgelines, a defining trait of the Great Wall.  
+- **Watchtower design**: Flat-roofed, crenellated (battlement-style) towers with rectangular bases—typical of *Ming Dynasty* (1368–1644) construction, the era when most surviving sections were reinforced.  
+- **Material**: Weathered stone and brick, consistent with ancient Chinese masonry techniques.  
+
+
+### 3. Historical Context  
+The Great Wall of China is one of the world’s most iconic historical structures, spanning over 20,000 km across northern China. While built by multiple dynasties, the best-preserved and most visually striking sections (like those in the image) date to the Ming Dynasty. Regions near Beijing (e.g., Hebei Province) are renowned for such scenic, well-maintained segments.  
+
+
+### 4. Specific Section Deduction  
+The combination of rugged, forested mountains, numerous watchtowers, and the wall’s serpentine path suggests a section like **Jinshanling** or **Simatai** in Hebei Province, northeast of Beijing. These areas are celebrated for their dramatic landscapes, historical significance, and frequent fog (as seen in the image), which enhances their picturesque quality.  
+
+
+### Final Conclusion  
+- **Continent**: Asia  
+- **Country**: China  
+- **Specific Section**: Likely the **Great Wall of China in Jinshanling or Simatai (Hebei Province)**, characterized by Ming Dynasty architecture, mountainous terrain, and scenic foggy vistas.`
     },
     {
         id: "std-3",
@@ -33,8 +82,21 @@ export const standardScenarios: BenchmarkScenario[] = [
         imagePlaceholder: "/placeholder-image.jpg",
         averagePrompt: "What city is this landmark in?",
         powerPrompt: "Based on the unique sail-like architecture and surrounding water/body, identify this urban landmark. Include city, country, and nearby features like bridges. Reason through potential confusions with similar structures.",
-        averageOutput: ``,
-        powerOutput: ``
+        averageOutput: `
+
+To determine the city, we identify the iconic landmarks: the Sydney Opera House (with its distinctive sail - like design) and the Sydney Harbour Bridge. These are world - renowned symbols of Sydney, Australia. Therefore, the city is Sydney.`,
+        powerOutput: `
+
+The landmark is the **Sydney Opera House**, located in **Sydney, Australia**. It is situated on the shores of Sydney Harbour, with the **Sydney Harbour Bridge** prominently visible behind it.  
+
+### Reasoning:  
+1. **Unique Sail-Like Architecture**: The Sydney Opera House’s iconic shell-shaped roofs are instantly recognizable and unmatched by other major landmarks. While structures like the Bahrain World Trade Center (three vertical sails) or the Milwaukee Art Museum (retractable wings) have "sail" elements, their designs and contexts differ drastically.  
+2. **Surrounding Water and Bridges**: The presence of a large steel arch bridge (Sydney Harbour Bridge) directly behind the Opera House is a key clue. No other major city combines such a distinctive architectural pair in a harbour setting.  
+3. **Urban Context**: The background skyline and harbor layout align with Sydney’s central business district, further confirming the location.  
+
+This combination of architectural uniqueness, geographic context, and nearby infrastructure eliminates confusion with similar structures.  
+
+**Answer:** Sydney Opera House, Sydney, Australia; nearby feature is the Sydney Harbour Bridge.`
     },
     {
         id: "std-4",
@@ -42,8 +104,36 @@ export const standardScenarios: BenchmarkScenario[] = [
         imagePlaceholder: "/placeholder-image.jpg",
         averagePrompt: "Identify the place shown here.",
         powerPrompt: "From this overhead view of ancient stone terraces and mountains, determine the archaeological site. Provide latitude/longitude estimates, country, and cultural significance. Note altitude and flora as clues.",
-        averageOutput: ``,
-        powerOutput: ``
+        averageOutput: `
+
+The image depicts the ancient Incan city of Machu Picchu, located in the Andes Mountains of Peru. This UNESCO World Heritage Site is known for its intricate stone structures, terraced agricultural fields, and stunning mountainous surroundings. 
+
+The answer is Machu Picchu`,
+        powerOutput: `
+
+To determine the archaeological site, we analyze key visual and contextual clues:  
+
+### Step 1: Identify Architectural & Environmental Features  
+The image shows **stone terraces** (a hallmark of Inca engineering), dense mountainous terrain, and mist-shrouded peaks—consistent with high-altitude Andean landscapes.  
+
+
+### Step 2: Link to Known Sites  
+These features match **Machu Picchu**, the iconic Inca citadel in Peru. Key supporting details:  
+- **Altitude**: ~2,430 meters (7,970 ft) above sea level, typical of the Peruvian Andes.  
+- **Flora**: Lush greenery and cloud forest vegetation, characteristic of the region’s microclimate.  
+
+
+### Step 3: Cultural & Geographic Context  
+- **Country**: Peru.  
+- **Latitude/Longitude**: Approximate coordinates are **-13.1631° S, -72.5450° W**.  
+- **Cultural Significance**: Built in the 15th century by the Inca Empire, Machu Picchu served as a royal estate and religious site. It is a UNESCO World Heritage Site and symbolizes Inca civilization’s architectural and agricultural prowess.  
+
+
+### Final Answer  
+The site is **Machu Picchu**, Peru.  
+- Latitude/Longitude: ~-13.1631° S, -72.5450° W  
+- Country: Peru  
+- Cultural Significance: A 15th-century Inca citadel, renowned for its terraced agriculture, stonework, and role as a political/religious center; a UNESCO World Heritage Site and emblem of Inca civilization.`
     },
     {
         id: "std-5",
@@ -51,8 +141,27 @@ export const standardScenarios: BenchmarkScenario[] = [
         imagePlaceholder: "/placeholder-image.jpg",
         averagePrompt: "Where was this picture captured?",
         powerPrompt: "Inspect the billboards, crowds, and wet streets in this bustling scene. Pinpoint the exact intersection, city, and country. Discuss how weather affects identification.",
-        averageOutput: ``,
-        powerOutput: ``
+        averageOutput: `
+
+To determine the location, analyze key elements: the street sign “W 49 St” (West 49th Street) and the dense, brightly lit billboards and commercial signage characteristic of a major urban hub. These features, along with the vibrant nighttime atmosphere and reflective wet streets, are iconic of **Times Square in New York City**.
+
+Times Square, New York City`,
+        powerOutput: `
+
+To determine the location, analyze key visual cues:  
+1. **Street Sign**: A clear “W 49 St” sign indicates West 49th Street.  
+2. **Landmarks & Branding**: Prominent billboards, neon signs, and the “Times Square” text on a building confirm the area is Times Square, a iconic neighborhood in Manhattan.  
+3. **Urban Environment**: Tall buildings, dense commercial signage, and the layout match New York City’s Times Square.  
+
+
+### Exact Intersection, City, and Country:  
+- **Intersection**: West 49th Street (likely intersecting with Broadway or another major avenue in Times Square).  
+- **City**: New York  
+- **Country**: United States  
+
+
+### Impact of Weather on Identification:  
+The wet streets reflect neon lights, enhancing the vibrant atmosphere but not obscuring critical landmarks (e.g., “Times Square” signage, street name). Rain does not alter the identifiable features of Times Square, so weather conditions do not hinder location recognition—instead, they emphasize the area’s characteristic luminosity.`
     },
     {
         id: "std-6",
@@ -60,8 +169,14 @@ export const standardScenarios: BenchmarkScenario[] = [
         imagePlaceholder: "/placeholder-image.jpg",
         averagePrompt: "What's the location of this monument?",
         powerPrompt: "Using the dome shape, minarets, and warm lighting, identify this mausoleum. Specify river proximity, city, and country. Include symmetry as a key visual hint.",
-        averageOutput: ``,
-        powerOutput: ``
+        averageOutput: `
+
+The monument in the image is the Taj Mahal, which is located in Agra, Uttar Pradesh, India.`,
+        powerOutput: `
+
+The mausoleum depicted is the **Taj Mahal**. It features a prominent central dome, four symmetrically placed minarets, and is renowned for its architectural symmetry. The structure is situated in **Agra, India**, adjacent to the **Yamuna River**, and the warm lighting in the image reflects its iconic appearance during sunrise or sunset.
+
+Taj Mahal; Yamuna River; Agra; India; Symmetrical design`
     },
     {
         id: "std-7",
@@ -69,8 +184,47 @@ export const standardScenarios: BenchmarkScenario[] = [
         imagePlaceholder: "/placeholder-image.jpg",
         averagePrompt: "Guess where this is.",
         powerPrompt: "Analyze rock layers, depth, and color gradients in this canyon image. Determine national park, state, and country. Explain erosion patterns as evidence.",
-        averageOutput: ``,
-        powerOutput: ``
+        averageOutput: `
+
+The image depicts a vast canyon with distinct layered rock formations, a winding river (likely the Colorado River), and a dramatic sunset. These features are iconic of the Grand Canyon National Park in Arizona, USA.`,
+        powerOutput: `
+
+To analyze the canyon image and determine its location, we examine **rock layers**, **depth**, **color gradients**, and **erosion patterns**:  
+
+
+### 1. Rock Layers  
+The canyon displays **horizontal sedimentary rock strata**, typical of ancient depositional environments (e.g., rivers, oceans). These layers represent millions of years of geological history, with each band corresponding to a distinct period of sediment accumulation. Common rock types in such formations include sandstone, limestone, and shale, which vary in hardness and composition.    
+
+
+### 2. Depth  
+The immense vertical extent of the canyon—exposing dozens of rock layers—indicates prolonged erosion by the **Colorado River**. Over ~6 million years, the river has carved downward (a process called *downcutting*), revealing rock layers that were once buried deep underground.    
+
+
+### 3. Color Gradients  
+The vibrant reds, oranges, and purples result from **mineral composition**:  
+- Red hues stem from *hematite* (iron oxide), formed when iron in rocks oxidizes (rusts).  
+- Lighter browns and tans reflect less oxidized minerals or sediments with lower iron content.  
+- Purple tones may arise from trace elements like manganese or variations in clay minerals.  
+
+These gradients highlight differences in rock age, chemistry, and exposure to weathering.    
+
+
+### 4. Location Identification  
+The combination of massive sedimentary layers, iconic color palette, and scale points to the **Grand Canyon**.  
+- **National Park**: Grand Canyon National Park  
+- **State**: Arizona  
+- **Country**: United States    
+
+
+### 5. Erosion Patterns as Evidence  
+The canyon’s shape and structure reveal key erosional processes:  
+- **Fluvial Downcutting**: The Colorado River’s persistent flow erodes bedrock vertically, deepening the canyon over millennia.  
+- **Differential Erosion**: Softer rock layers (e.g., shale) erode faster than harder layers (e.g., sandstone), creating the “stepped” cliff-and-terrace landscape.  
+- **Tributary Erosion**: Smaller side canyons (visible as branching valleys) form where tributaries cut into the main canyon walls, further shaping the topography.  
+- **Weathering**: Physical (freeze-thaw cycles breaking rocks) and chemical (dissolution of minerals) weathering weaken rock, making it easier for the river to carry away sediment.    
+
+
+In summary, the image depicts the Grand Canyon in Arizona, USA, where sedimentary rock layers, extreme depth, and vivid color gradients are direct results of millions of years of river erosion and weathering.`
     },
     {
         id: "std-8",
@@ -78,8 +232,28 @@ export const standardScenarios: BenchmarkScenario[] = [
         imagePlaceholder: "/placeholder-image.jpg",
         averagePrompt: "What country and landmark is this?",
         powerPrompt: "From the conical peak and pink flowers, deduce the volcano's location. Include region, country, and seasonal context. Compare to similar mountains.",
-        averageOutput: ``,
-        powerOutput: ``
+        averageOutput: `
+
+The image shows Mount Fuji, a prominent volcanic mountain in Japan, with a body of water (likely one of the Fuji Five Lakes) in the foreground and cherry blossoms in bloom. Therefore, the country is Japan and the landmark is Mount Fuji.
+Japan, Mount Fuji`,
+        powerOutput: `
+
+To deduce the volcano’s location, we analyze key clues:  
+
+1. **Conical Peak**: The symmetrical, snow-capped cone is characteristic of a *stratovolcano*. Among the world’s most iconic stratovolcanoes, this shape is closely associated with **Mount Fuji** in Japan.  
+2. **Pink Flowers**: The delicate pink blooms are cherry blossoms (*sakura*), which are culturally and ecologically tied to Japan. Cherry blossoms typically bloom in **spring (March–April)** in Japan, aligning with the seasonal context.  
+3. **Geographic Context**: Mount Fuji is located in the **Chūbu region** of Japan, straddling Yamanashi and Shizuoka prefectures. It is often viewed from lakes like Kawaguchi or Motosu, which matches the water body in the foreground.  
+
+
+### Comparison to Similar Mountains:  
+- **Mount Vesuvius (Italy)**: Less symmetric, surrounded by urban development, and lacks the iconic cherry blossom association.  
+- **Mount Rainier (USA)**: Taller and more rugged, with a different ecological setting (no widespread cherry blossom culture).  
+- **Mount Kilimanjaro (Tanzania)**: A dormant volcanic complex, not a single conical stratovolcano, and no cherry blossom connection.  
+
+Mount Fuji’s uniqueness lies in its perfect symmetry, cultural symbolism (cherry blossoms), and role as Japan’s national icon—distinguishing it from other volcanoes.  
+
+
+**Location**: Chūbu region, Japan (specifically near Mount Fuji); **Seasonal Context**: Spring (cherry blossom blooming period).`
     },
     {
         id: "std-9",
@@ -87,8 +261,26 @@ export const standardScenarios: BenchmarkScenario[] = [
         imagePlaceholder: "/placeholder-image.jpg",
         averagePrompt: "Identify this historical site.",
         powerPrompt: "Examine the arched ruins and seating tiers inside this amphitheater. Identify city, country, and historical era. Note any restoration clues.",
-        averageOutput: ``,
-        powerOutput: ``
+        averageOutput: `
+
+The historical site in the image is the **Colosseum** in Rome, Italy. This iconic ancient amphitheater is known for its distinctive architecture, including massive stone walls, arched openings, and tiered seating, which were used for gladiatorial contests and public spectacles in Roman times.
+The final result is Colosseum.`,
+        powerOutput: `
+
+To determine the location and context of the amphitheater:  
+
+### **City, Country, and Historical Era**  
+The structure is the **Colosseum** in **Rome, Italy**, built during the **Roman Empire’s Flavian Dynasty (c. 70–80 CE)**. This is identified by its iconic architectural features: multi-tiered arched seating, the elliptical arena floor, and the layered stone construction typical of Roman amphitheaters.  
+
+
+### **Restoration Clues**  
+- **Modern Infrastructure**: The metal walkway and railings for tourists indicate contemporary preservation efforts to allow safe access to the ruins.  
+- **Reconstructed Sections**: Some stonework (e.g., the lighter-colored patches on walls) likely represents repairs or reinforcements added during restoration projects.  
+- **Preserved Ruins**: While much of the original structure remains in ruin (exposing underground tunnels and foundations), key elements like the main arches and seating tiers have been stabilized for public viewing.  
+
+
+**Final Answer:**  
+City: Rome; Country: Italy; Historical Era: Roman Empire (Flavian period, 1st century CE); Restoration clues include modern walkways, reinforced stonework, and preserved ruins for tourism.`
     },
     {
         id: "std-10",
@@ -96,8 +288,26 @@ export const standardScenarios: BenchmarkScenario[] = [
         imagePlaceholder: "/placeholder-image.jpg",
         averagePrompt: "Where is this waterfall located?",
         powerPrompt: "Based on the horseshoe shape and mist, locate this waterfall. Specify border details, countries involved, and viewpoint.",
-        averageOutput: ``,
-        powerOutput: ``
+        averageOutput: `
+
+To determine the location of the waterfall in the image, we analyze key visual features: the massive scale of the falls, the mist rising from the cascading water, and the characteristic landscape (including the river below and the cliffside terrain). These elements are iconic of **Niagara Falls**, one of the world’s most renowned waterfalls straddling the border between the United States and Canada. 
+
+Thus, the waterfall is located at Niagara Falls.`,
+        powerOutput: `
+
+To determine the location, we analyze the **horseshoe - shaped waterfall** and mist, which are iconic features of **Niagara Falls**, specifically **Horseshoe Falls** (also known as Canadian Falls).  
+
+### Border Details & Countries Involved  
+Niagara Falls straddles the international border between two countries:  
+- **Canada**: The province of Ontario.  
+- **United States**: The state of New York.  
+The falls are part of the Niagara River, which flows from Lake Erie to Lake Ontario, with the border running through the river.    
+
+### Viewpoint  
+The image’s perspective aligns with views from the **Canadian side** (Ontario), where Horseshoe Falls is most prominently observed. This area includes landmarks like Queen Victoria Park, offering panoramic vistas of the falls’ curved shape and mist.    
+
+
+Thus, the waterfall is **Niagara Falls (Horseshoe Falls)**, located on the border between **Canada (Ontario)** and the **United States (New York)**, with the viewpoint typically from the Canadian side.`
     },
     {
         id: "std-11",
@@ -105,8 +315,17 @@ export const standardScenarios: BenchmarkScenario[] = [
         imagePlaceholder: "/placeholder-image.jpg",
         averagePrompt: "Guess the island in this photo.",
         powerPrompt: "Using white buildings, blue roofs, and sea views, identify the island group and country. Provide volcanic history as context.",
-        averageOutput: ``,
-        powerOutput: ``
+        averageOutput: `
+
+The image features a white building with a distinctive blue dome, characteristic of Greek Orthodox churches found in the Cyclades islands. The backdrop includes rugged cliffs and the deep blue waters of the Aegean Sea, which are iconic elements of Santorini's landscape. Santorini is renowned for its whitewashed structures, blue-domed churches, and dramatic volcanic caldera views, making it highly recognizable. 
+
+Therefore, the island in the photo is Santorini.`,
+        powerOutput: `
+
+The image depicts **Santorini**, part of the **Cyclades** island group in **Greece**.  
+
+### Volcanic History Context:  
+Santorini’s dramatic landscape is shaped by its volcanic origins. The island is the remnant of a massive volcanic caldera formed by the catastrophic **Minoan eruption** (c. 1600 BCE), one of the largest volcanic events in recorded history. This eruption collapsed the volcano’s central cone, creating the iconic caldera cliffs and deep bay seen today. Subsequent smaller eruptions (notably in 1707–1711 CE) further modified the terrain, while ongoing seismic activity highlights the region’s active volcanic legacy. The white-washed buildings and blue-domed churches are traditional architectural responses to the island’s arid climate and volcanic soil, blending functionality with aesthetic charm against the backdrop of the Aegean Sea.`
     },
     {
         id: "std-12",
@@ -114,8 +333,21 @@ export const standardScenarios: BenchmarkScenario[] = [
         imagePlaceholder: "/placeholder-image.jpg",
         averagePrompt: "What ancient site is this?",
         powerPrompt: "From the triangular structures and desert animal, determine the ancient complex. Include city, country, and pharaoh associations.",
-        averageOutput: ``,
-        powerOutput: ``
+        averageOutput: `
+
+To determine the ancient site, we analyze the key visual elements: the prominent pyramids in the background are characteristic of the Giza Pyramid Complex in Egypt, one of the most iconic ancient sites. The desert landscape and presence of camels (common in Egyptian tourism around these pyramids) further support this identification. 
+
+Thus, the ancient site is the Giza Pyramid Complex.`,
+        powerOutput: `
+
+The image shows the **Giza Pyramid Complex** in **Giza, Egypt**. This ancient complex features the iconic triangular pyramids, which were built as tombs for pharaohs during the Old Kingdom period. The most prominent pyramids here are attributed to:  
+- **Khufu** (Great Pyramid),  
+- **Khafre** (second-largest pyramid),  
+- **Menkaure** (smallest of the three main pyramids).  
+
+Camels, visible in the foreground, are typical of the Egyptian desert environment surrounding this historic site.  
+
+**Answer:** The ancient complex is the Giza Pyramid Complex in Giza, Egypt, associated with Pharaohs Khufu, Khafre, and Menkaure.`
     }
 ];
 
