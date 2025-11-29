@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 import { editorsNote } from './fonts';
 import { standardScenarios, toughScenarios, BenchmarkScenario } from './data';
 
@@ -93,6 +94,18 @@ function BenchmarkSection({ title, subtitle, scenarios, isDarker = false }: { ti
 }
 
 function BenchmarkCard({ scenario }: { scenario: BenchmarkScenario }) {
+    const markdownComponents = {
+        h1: ({ node, ...props }: any) => <h1 className="text-xl font-bold text-white mt-4 mb-2" {...props} />,
+        h2: ({ node, ...props }: any) => <h2 className="text-lg font-bold text-white mt-3 mb-2" {...props} />,
+        h3: ({ node, ...props }: any) => <h3 className="text-md font-bold text-white mt-3 mb-1" {...props} />,
+        p: ({ node, ...props }: any) => <p className="mb-4 text-white/80 leading-relaxed" {...props} />,
+        ul: ({ node, ...props }: any) => <ul className="list-disc pl-5 mb-4 space-y-1 text-white/80" {...props} />,
+        ol: ({ node, ...props }: any) => <ol className="list-decimal pl-5 mb-4 space-y-1 text-white/80" {...props} />,
+        li: ({ node, ...props }: any) => <li className="" {...props} />,
+        strong: ({ node, ...props }: any) => <strong className="font-semibold text-white" {...props} />,
+        em: ({ node, ...props }: any) => <em className="italic text-white/90" {...props} />,
+    };
+
     return (
         <div className="group relative">
             {/* Decorative line */}
@@ -105,19 +118,18 @@ function BenchmarkCard({ scenario }: { scenario: BenchmarkScenario }) {
                     <h3 className="text-2xl md:text-3xl font-light text-white/90">{scenario.searchTerm}</h3>
                 </div>
 
-                {/* Image Placeholder */}
-                <div className="relative w-full aspect-[21/9] overflow-hidden rounded-lg bg-[#111] border border-white/5 group-hover:border-white/10 transition-colors duration-500">
-                    {/* Placeholder Content */}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="text-center space-y-2 opacity-30 group-hover:opacity-50 transition-opacity">
-                            <div className="mx-auto w-12 h-12 border border-white/30 rounded-full flex items-center justify-center">
-                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                            </div>
-                            <p className="text-sm font-mono tracking-widest uppercase">Input Image</p>
-                        </div>
+                {/* Chat-style Image Bubble */}
+                <div className="flex justify-start pl-0 md:pl-18">
+                    <div className="relative max-w-md w-full aspect-[4/3] overflow-hidden rounded-3xl rounded-tl-sm bg-[#1a1a1a] border border-white/10 group-hover:border-white/20 transition-colors duration-500 shadow-2xl shadow-black/50">
+                        {/* Actual Image */}
+                        <img
+                            src={scenario.imagePlaceholder}
+                            alt={scenario.searchTerm}
+                            className="w-full h-full object-cover"
+                        />
+                        {/* Gradient Overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent opacity-60" />
                     </div>
-                    {/* Gradient Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent opacity-60" />
                 </div>
 
                 {/* Two Column Layout: Average vs Power */}
@@ -135,13 +147,21 @@ function BenchmarkCard({ scenario }: { scenario: BenchmarkScenario }) {
                                 <p className="font-serif text-lg italic text-white/80">"{scenario.averagePrompt}"</p>
                             </div>
 
-                            {/* AI Response Placeholder */}
+                            {/* AI Response */}
                             <div className="relative p-6 rounded-2xl bg-[#0A0A0A] border border-white/5 min-h-[120px] flex flex-col justify-between group/response hover:border-white/10 transition-colors">
-                                <div className="space-y-2">
-                                    <div className="h-2 w-3/4 bg-white/10 rounded animate-pulse" />
-                                    <div className="h-2 w-1/2 bg-white/10 rounded animate-pulse delay-75" />
-                                    <div className="h-2 w-5/6 bg-white/10 rounded animate-pulse delay-150" />
-                                </div>
+                                {scenario.averageOutput ? (
+                                    <div className="text-sm">
+                                        <ReactMarkdown components={markdownComponents}>
+                                            {scenario.averageOutput}
+                                        </ReactMarkdown>
+                                    </div>
+                                ) : (
+                                    <div className="space-y-2">
+                                        <div className="h-2 w-3/4 bg-white/10 rounded animate-pulse" />
+                                        <div className="h-2 w-1/2 bg-white/10 rounded animate-pulse delay-75" />
+                                        <div className="h-2 w-5/6 bg-white/10 rounded animate-pulse delay-150" />
+                                    </div>
+                                )}
                                 <div className="mt-4 flex justify-between items-end">
                                     <span className="text-[10px] text-white/20 uppercase tracking-widest">Z.ai Response</span>
                                     <div className="px-2 py-1 rounded bg-white/5 border border-white/5 text-xs font-mono text-white/40">
@@ -164,14 +184,22 @@ function BenchmarkCard({ scenario }: { scenario: BenchmarkScenario }) {
                                 <p className="font-serif text-lg italic text-white/90">"{scenario.powerPrompt}"</p>
                             </div>
 
-                            {/* AI Response Placeholder */}
+                            {/* AI Response */}
                             <div className="relative p-6 rounded-2xl bg-[#0A0A0A] border border-white/5 min-h-[120px] flex flex-col justify-between group/response hover:border-purple-500/20 transition-colors">
-                                <div className="space-y-2">
-                                    <div className="h-2 w-full bg-white/10 rounded animate-pulse" />
-                                    <div className="h-2 w-11/12 bg-white/10 rounded animate-pulse delay-75" />
-                                    <div className="h-2 w-4/5 bg-white/10 rounded animate-pulse delay-150" />
-                                    <div className="h-2 w-full bg-white/10 rounded animate-pulse delay-200" />
-                                </div>
+                                {scenario.powerOutput ? (
+                                    <div className="text-sm">
+                                        <ReactMarkdown components={markdownComponents}>
+                                            {scenario.powerOutput}
+                                        </ReactMarkdown>
+                                    </div>
+                                ) : (
+                                    <div className="space-y-2">
+                                        <div className="h-2 w-full bg-white/10 rounded animate-pulse" />
+                                        <div className="h-2 w-11/12 bg-white/10 rounded animate-pulse delay-75" />
+                                        <div className="h-2 w-4/5 bg-white/10 rounded animate-pulse delay-150" />
+                                        <div className="h-2 w-full bg-white/10 rounded animate-pulse delay-200" />
+                                    </div>
+                                )}
                                 <div className="mt-4 flex justify-between items-end">
                                     <span className="text-[10px] text-white/20 uppercase tracking-widest">Z.ai Response</span>
                                     <div className="px-2 py-1 rounded bg-purple-500/10 border border-purple-500/20 text-xs font-mono text-purple-200/60">
