@@ -4,7 +4,7 @@ export const standardScenarios: BenchmarkScenario[] = [
         {
                 id: "std-1",
                 searchTerm: "Eiffel Tower at night from Seine River",
-                imagePlaceholder: "/images/Eiffel.jpg",
+                imagePlaceholder: "/Images/Eiffel.jpg",
                 averagePrompt: "Where is this photo taken?",
                 powerPrompt: "Analyze this image for geographic clues like architecture, lighting, and water features. Provide a step-by-step reasoning to identify the exact location, including country, city, and landmark. Consider any seasonal or time-of-day hints.",
                 averageOutput: `
@@ -34,7 +34,7 @@ Landmark: Eiffel Tower`,
         {
                 id: "std-2",
                 searchTerm: "Great Wall of China misty morning",
-                imagePlaceholder: "/images/china.png",
+                imagePlaceholder: "/Images/china.png",
                 averagePrompt: "Guess the location in this image.",
                 powerPrompt: "Examine the terrain, vegetation, and structure in this foggy landscape image. Deduce the location with historical context, specifying continent, country, and specific section if possible. Explain visual cues like wall patterns.",
                 averageOutput: `
@@ -71,7 +71,7 @@ The combination of rugged, forested mountains, numerous watchtowers, and the wal
         {
                 id: "std-3",
                 searchTerm: "Sydney Opera House harbor view",
-                imagePlaceholder: "/images/Sydney.jpg",
+                imagePlaceholder: "/Images/Sydney.jpg",
                 averagePrompt: "What city is this landmark in?",
                 powerPrompt: "Based on the unique sail-like architecture and surrounding water/body, identify this urban landmark. Include city, country, and nearby features like bridges. Reason through potential confusions with similar structures.",
                 averageOutput: `
@@ -93,7 +93,7 @@ This combination of architectural uniqueness, geographic context, and nearby inf
         {
                 id: "std-4",
                 searchTerm: "Machu Picchu ruins aerial",
-                imagePlaceholder: "/images/machu.jpg",
+                imagePlaceholder: "/Images/machu.jpg",
                 averagePrompt: "Identify the place shown here.",
                 powerPrompt: "From this overhead view of ancient stone terraces and mountains, determine the archaeological site. Provide latitude/longitude estimates, country, and cultural significance. Note altitude and flora as clues.",
                 averageOutput: `
@@ -131,7 +131,7 @@ The site is **Machu Picchu**, Peru.
         {
                 id: "std-5",
                 searchTerm: "Times Square New York rainy day",
-                imagePlaceholder: "/images/nyc.jpg",
+                imagePlaceholder: "/Images/nyc.jpg",
                 averagePrompt: "Where was this picture captured?",
                 powerPrompt: "Inspect the billboards, crowds, and wet streets in this bustling scene. Pinpoint the exact intersection, city, and country. Discuss how weather affects identification.",
                 averageOutput: `
@@ -158,7 +158,7 @@ The wet streets reflect neon lights, enhancing the vibrant atmosphere but not ob
         {
                 id: "std-6",
                 searchTerm: "Taj Mahal sunrise",
-                imagePlaceholder: "/images/taj.jpg",
+                imagePlaceholder: "/Images/taj.jpg",
                 averagePrompt: "What's the location of this monument?",
                 powerPrompt: "Using the dome shape, minarets, and warm lighting, identify this mausoleum. Specify river proximity, city, and country. Include symmetry as a key visual hint.",
                 averageOutput: `
@@ -173,7 +173,7 @@ Taj Mahal; Yamuna River; Agra; India; Symmetrical design`,
         {
                 id: "std-7",
                 searchTerm: "Grand Canyon sunset overlook",
-                imagePlaceholder: "/images/gc.jpg",
+                imagePlaceholder: "/Images/gc.jpg",
                 averagePrompt: "Guess where this is.",
                 powerPrompt: "Analyze rock layers, depth, and color gradients in this canyon image. Determine national park, state, and country. Explain erosion patterns as evidence.",
                 averageOutput: `
@@ -221,7 +221,7 @@ In summary, the image depicts the Grand Canyon in Arizona, USA, where sedimentar
         {
                 id: "std-8",
                 searchTerm: "Mount Fuji cherry blossoms",
-                imagePlaceholder: "/images/mf.png",
+                imagePlaceholder: "/Images/mf.png",
                 averagePrompt: "What country and landmark is this?",
                 powerPrompt: "From the conical peak and pink flowers, deduce the volcano's location. Include region, country, and seasonal context. Compare to similar mountains.",
                 averageOutput: `
@@ -250,7 +250,7 @@ Mount Fuji’s uniqueness lies in its perfect symmetry, cultural symbolism (cher
         {
                 id: "std-9",
                 searchTerm: "Colosseum Rome interior",
-                imagePlaceholder: "/images/c.png",
+                imagePlaceholder: "/Images/c.png",
                 averagePrompt: "Identify this historical site.",
                 powerPrompt: "Examine the arched ruins and seating tiers inside this amphitheater. Identify city, country, and historical era. Note any restoration clues.",
                 averageOutput: `
@@ -277,7 +277,7 @@ City: Rome; Country: Italy; Historical Era: Roman Empire (Flavian period, 1st ce
         {
                 id: "std-10",
                 searchTerm: "Niagara Falls Canadian side",
-                imagePlaceholder: "/images/niagara.jpg",
+                imagePlaceholder: "/Images/niagara.jpg",
                 averagePrompt: "Where is this waterfall located?",
                 powerPrompt: "Based on the horseshoe shape and mist, locate this waterfall. Specify border details, countries involved, and viewpoint.",
                 averageOutput: `
@@ -304,7 +304,7 @@ Thus, the waterfall is **Niagara Falls (Horseshoe Falls)**, located on the borde
         {
                 id: "std-11",
                 searchTerm: "Santorini Greece blue domes",
-                imagePlaceholder: "/images/santorini.png",
+                imagePlaceholder: "/Images/santorini.png",
                 averagePrompt: "Guess the island in this photo.",
                 powerPrompt: "Using white buildings, blue roofs, and sea views, identify the island group and country. Provide volcanic history as context.",
                 averageOutput: `
@@ -322,7 +322,7 @@ Santorini's dramatic landscape is shaped by its volcanic origins. The island is 
         {
                 id: "std-12",
                 searchTerm: "Pyramids of Giza camel foreground",
-                imagePlaceholder: "/images/giza.png",
+                imagePlaceholder: "/Images/giza.png",
                 averagePrompt: "What ancient site is this?",
                 powerPrompt: "From the triangular structures and desert animal, determine the ancient complex. Include city, country, and pharaoh associations.",
                 averageOutput: `
