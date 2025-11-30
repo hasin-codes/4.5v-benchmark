@@ -441,7 +441,13 @@ export const webpageReplicationScenarios: WebpageReplicationScenario[] = [
     </div>
 </body>
 </html>`,
-        outputType: "html"
+        outputType: "html",
+        averageTestScore: 5,
+        averageTestReason: "",
+        averagePsychosis: false,
+        powerTestScore: 5,
+        powerTestReason: "",
+        powerPsychosis: false
     },
     {
         id: "web-2",
@@ -1062,7 +1068,13 @@ export const webpageReplicationScenarios: WebpageReplicationScenario[] = [
     </script>
 </body>
 </html>`,
-        outputType: "html"
+        outputType: "html",
+        averageTestScore: 5,
+        averageTestReason: "",
+        averagePsychosis: false,
+        powerTestScore: 5,
+        powerTestReason: "",
+        powerPsychosis: false
     },
     {
         id: "web-3",
@@ -1366,7 +1378,13 @@ export const webpageReplicationScenarios: WebpageReplicationScenario[] = [
     </script>
 </body>
 </html>`,
-        outputType: "html"
+        outputType: "html",
+        averageTestScore: 5,
+        averageTestReason: "",
+        averagePsychosis: false,
+        powerTestScore: 5,
+        powerTestReason: "",
+        powerPsychosis: false
     },
     {
         id: "web-4",
@@ -2452,7 +2470,13 @@ export const webpageReplicationScenarios: WebpageReplicationScenario[] = [
     </script>
 </body>
 </html>`,
-        outputType: "html"
+        outputType: "html",
+        averageTestScore: 5,
+        averageTestReason: "",
+        averagePsychosis: false,
+        powerTestScore: 5,
+        powerTestReason: "",
+        powerPsychosis: false
     },
     {
         id: "web-5",
@@ -3155,6 +3179,12 @@ export const webpageReplicationScenarios: WebpageReplicationScenario[] = [
     </script>
 </body>
 </html>`,
-        outputType: "html"
+        outputType: "html",
+        averageTestScore: 5,
+        averageTestReason: "",
+        averagePsychosis: false,
+        powerTestScore: 5,
+        powerTestReason: "",
+        powerPsychosis: false
     }
 ];

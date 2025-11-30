@@ -79,9 +79,9 @@ function WebpageReplicationCard({ scenario }: { scenario: WebpageReplicationScen
                             <div className="flex-none flex items-center justify-between p-4 border-t border-white/5 bg-[#1a1a1a]">
                                 <span className="text-[10px] text-white/20 uppercase tracking-widest">Average Output</span>
                                 <TestScore
-                                    score={scenario.testScore}
-                                    reason={scenario.testReason}
-                                    psychosis={scenario.psychosis}
+                                    score={scenario.averageTestScore}
+                                    reason={scenario.averageTestReason}
+                                    psychosis={scenario.averagePsychosis}
                                 />
                             </div>
                         </div>
@@ -105,9 +105,9 @@ function WebpageReplicationCard({ scenario }: { scenario: WebpageReplicationScen
                             <div className="flex-none flex items-center justify-between p-4 border-t border-white/5 bg-[#1a1a1a]">
                                 <span className="text-[10px] text-white/20 uppercase tracking-widest">Power Output</span>
                                 <TestScore
-                                    score={scenario.testScore}
-                                    reason={scenario.testReason}
-                                    psychosis={scenario.psychosis}
+                                    score={scenario.powerTestScore}
+                                    reason={scenario.powerTestReason}
+                                    psychosis={scenario.powerPsychosis}
                                 />
                             </div>
                         </div>

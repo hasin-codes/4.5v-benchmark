@@ -30,6 +30,12 @@ To determine the location, we analyze key geographic clues:
 Country: France  
 City: Paris  
 Landmark: Eiffel Tower`,
+                averageTestScore: 10,
+                averageTestReason: "",
+                averagePsychosis: false,
+                powerTestScore: 10,
+                powerTestReason: "",
+                powerPsychosis: false
         },
         {
                 id: "std-2",
@@ -126,7 +132,12 @@ The site is **Machu Picchu**, Peru.
 - Latitude/Longitude: ~-13.1631° S, -72.5450° W  
 - Country: Peru  
 - Cultural Significance: A 15th-century Inca citadel, renowned for its terraced agriculture, stonework, and role as a political/religious center; a UNESCO World Heritage Site and emblem of Inca civilization.`,
-
+                averageTestScore: 10,
+                averageTestReason: "",
+                averagePsychosis: false,
+                powerTestScore: 10,
+                powerTestReason: "",
+                powerPsychosis: false
         },
         {
                 id: "std-5",
@@ -154,6 +165,12 @@ To determine the location, analyze key visual cues:
 
 ### Impact of Weather on Identification:
 The wet streets reflect neon lights, enhancing the vibrant atmosphere but not obscuring critical landmarks (e.g., "Times Square" signage, street name). Rain does not alter the identifiable features of Times Square, so weather conditions do not hinder location recognition—instead, they emphasize the area's characteristic luminosity.`,
+                averageTestScore: 10,
+                averageTestReason: "",
+                averagePsychosis: false,
+                powerTestScore: 10,
+                powerTestReason: "",
+                powerPsychosis: false
         },
         {
                 id: "std-6",
@@ -169,6 +186,12 @@ The monument in the image is the Taj Mahal, which is located in Agra, Uttar Prad
 The mausoleum depicted is the **Taj Mahal**. It features a prominent central dome, four symmetrically placed minarets, and is renowned for its architectural symmetry. The structure is situated in **Agra, India**, adjacent to the **Yamuna River**, and the warm lighting in the image reflects its iconic appearance during sunrise or sunset.
 
 Taj Mahal; Yamuna River; Agra; India; Symmetrical design`,
+                averageTestScore: 10,
+                averageTestReason: "",
+                averagePsychosis: false,
+                powerTestScore: 10,
+                powerTestReason: "",
+                powerPsychosis: false
         },
         {
                 id: "std-7",
@@ -217,6 +240,12 @@ The canyon’s shape and structure reveal key erosional processes:
 
 
 In summary, the image depicts the Grand Canyon in Arizona, USA, where sedimentary rock layers, extreme depth, and vivid color gradients are direct results of millions of years of river erosion and weathering.`,
+                averageTestScore: 10,
+                averageTestReason: "",
+                averagePsychosis: false,
+                powerTestScore: 10,
+                powerTestReason: "",
+                powerPsychosis: false
         },
         {
                 id: "std-8",
@@ -246,6 +275,12 @@ Mount Fuji’s uniqueness lies in its perfect symmetry, cultural symbolism (cher
 
 
 **Location**: Chūbu region, Japan (specifically near Mount Fuji); **Seasonal Context**: Spring (cherry blossom blooming period).`,
+                averageTestScore: 10,
+                averageTestReason: "",
+                averagePsychosis: false,
+                powerTestScore: 10,
+                powerTestReason: "",
+                powerPsychosis: false
         },
         {
                 id: "std-9",
@@ -273,6 +308,12 @@ The structure is the **Colosseum** in **Rome, Italy**, built during the **Roman 
 
 **Final Answer:**
 City: Rome; Country: Italy; Historical Era: Roman Empire (Flavian period, 1st century CE); Restoration clues include modern walkways, reinforced stonework, and preserved ruins for tourism.`,
+                averageTestScore: 10,
+                averageTestReason: "",
+                averagePsychosis: false,
+                powerTestScore: 10,
+                powerTestReason: "",
+                powerPsychosis: false
         },
         {
                 id: "std-10",
@@ -300,6 +341,12 @@ The image’s perspective aligns with views from the **Canadian side** (Ontario)
 
 
 Thus, the waterfall is **Niagara Falls (Horseshoe Falls)**, located on the border between **Canada (Ontario)** and the **United States (New York)**, with the viewpoint typically from the Canadian side.`,
+                averageTestScore: 10,
+                averageTestReason: "",
+                averagePsychosis: false,
+                powerTestScore: 10,
+                powerTestReason: "",
+                powerPsychosis: false
         },
         {
                 id: "std-11",
@@ -318,6 +365,12 @@ The image depicts **Santorini**, part of the **Cyclades** island group in **Gree
 
 ### Volcanic History Context:
 Santorini's dramatic landscape is shaped by its volcanic origins. The island is the remnant of a massive volcanic caldera formed by the catastrophic **Minoan eruption** (c. 1600 BCE), one of the largest volcanic events in recorded history. This eruption collapsed the volcano's central cone, creating the iconic caldera cliffs and deep bay seen today. Subsequent smaller eruptions (notably in 1707–1711 CE) further modified the terrain, while ongoing seismic activity highlights the region's active volcanic legacy. The white-washed buildings and blue-domed churches are traditional architectural responses to the island's arid climate and volcanic soil, blending functionality with aesthetic charm against the backdrop of the Aegean Sea.`,
+                averageTestScore: 10,
+                averageTestReason: "",
+                averagePsychosis: false,
+                powerTestScore: 10,
+                powerTestReason: "",
+                powerPsychosis: false
         },
         {
                 id: "std-12",
@@ -340,7 +393,12 @@ The image shows the **Giza Pyramid Complex** in **Giza, Egypt**. This ancient co
 Camels, visible in the foreground, are typical of the Egyptian desert environment surrounding this historic site.  
 
 **Answer:** The ancient complex is the Giza Pyramid Complex in Giza, Egypt, associated with Pharaohs Khufu, Khafre, and Menkaure.`,
-
+                averageTestScore: 10,
+                averageTestReason: "",
+                averagePsychosis: false,
+                powerTestScore: 10,
+                powerTestReason: "",
+                powerPsychosis: false
         }
 ];
 
@@ -542,7 +600,12 @@ Country: Uruguay
 Key Environmental Factors: Wind erosion shaping pebble beaches and dunes; strong onshore winds.
 Ecosystem Hint: Kelp forests in adjacent waters.
 `,
-                psychosis: true
+                averageTestScore: 0,
+                averageTestReason: "Wrong guess",
+                averagePsychosis: false,
+                powerTestScore: 4,
+                powerTestReason: "Wrong place",
+                powerPsychosis: true
         },
 
 
@@ -597,7 +660,12 @@ This woodland is likely in **Fiordland or Westland Tai Poutini National Park, So
 
 **Final Answer:**  
 The woodland is located in **Fiordland or Westland Tai Poutini National Park, South Island, New Zealand**. Key evidence includes podocarp trees (iconic to NZ’s temperate rainforests), dense fern undergrowth (adapted to high moisture), and persistent fog (from oceanic influences). Biodiversity is high due to endemism (driven by isolation) and moisture-dependent niches. Compared to similar temperate rainforests (e.g., Pacific Northwest USA/Canada), New Zealand’s forests have greater plant endemism and distinct conifer dominance (podocarps vs. spruces/hemlocks).`,
-                psychosis: true
+                averageTestScore: 8,
+                averageTestReason: "",
+                averagePsychosis: false,
+                powerTestScore: 8,
+                powerTestReason: "",
+                powerPsychosis: true
         },
         {
                 id: "tough-8",
@@ -628,7 +696,13 @@ To deduce the park’s location, analyze key visual cues:
 Combining these, the park is likely within a historic palace complex in Seoul. The most iconic such site with similar architecture and urban integration is **Changdeokgung Palace**, located in **Jongno-gu, Seoul, South Korea**.  
 
 
-**Answer**: Jongno-gu, Seoul, South Korea; seasonal foliage shows autumn red/orange hues, and air quality appears clear.`
+**Answer**: Jongno-gu, Seoul, South Korea; seasonal foliage shows autumn red/orange hues, and air quality appears clear.`,
+                averageTestScore: 10,
+                averageTestReason: "",
+                averagePsychosis: false,
+                powerTestScore: 10,
+                powerTestReason: "",
+                powerPsychosis: false
         },
         {
                 id: "tough-9",
@@ -662,7 +736,13 @@ The stone huts reflect **medieval to early modern rural architecture** (roughly 
 Craco was abandoned in the 1960s due to landslides and soil instability. Most buildings remain in **ruinous condition** with no large-scale restoration. The site is preserved as a “ghost town” to showcase its historical decay, with only minor stabilization (e.g., securing loose stones) rather than full reconstruction.  
 
 
-This analysis aligns with Craco’s iconic status as an abandoned medieval settlement in southern Italy, defined by its dramatic landscape and untouched ruins.`
+This analysis aligns with Craco’s iconic status as an abandoned medieval settlement in southern Italy, defined by its dramatic landscape and untouched ruins.`,
+                averageTestScore: 7,
+                averageTestReason: "Perfect country but a bit off by quite some margin",
+                averagePsychosis: false,
+                powerTestScore: 7,
+                powerTestReason: "Perfect country but a bit off by quite some margin",
+                powerPsychosis: false
         },
         {
                 id: "tough-10",
@@ -691,7 +771,13 @@ To determine the location of this riparian zone, we analyze key features:
    The Amazon Basin dominates this landscape. While multiple Brazilian states host Amazonian tributaries, the combination of forest density, water chemistry, and ecological traits points to a **tributary within the Amazon Basin**, most likely in **Brazil** (the largest portion of the Amazon lies here).  
 
 
-**Answer**: Basin: Amazon; State: Amazonas (or similar Amazonian state); Country: Brazil.`
+**Answer**: Basin: Amazon; State: Amazonas (or similar Amazonian state); Country: Brazil.`,
+                averageTestScore: 10,
+                averageTestReason: "",
+                averagePsychosis: false,
+                powerTestScore: 10,
+                powerTestReason: "",
+                powerPsychosis: false
         },
         {
                 id: "tough-11",
@@ -726,7 +812,13 @@ The Scottish Highlands exhibit a **temperate maritime climate**, driven by their
 - **Temperatures**: Mild for latitude (average 5–15°C in summer; -2–8°C in winter) due to the Gulf Stream, but wind chill and sudden weather shifts are common in exposed highland areas.    
 
 
-In summary, the described landscape aligns with the Scottish Highlands—a region defined by ancient geology, glacial heritage, and a dynamic maritime climate that shapes its iconic scenery.`
+In summary, the described landscape aligns with the Scottish Highlands—a region defined by ancient geology, glacial heritage, and a dynamic maritime climate that shapes its iconic scenery.`,
+                averageTestScore: 10,
+                averageTestReason: "",
+                averagePsychosis: false,
+                powerTestScore: 10,
+                powerTestReason: "",
+                powerPsychosis: false
         },
         {
                 id: "tough-12",

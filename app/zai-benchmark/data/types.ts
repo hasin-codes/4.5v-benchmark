@@ -6,9 +6,16 @@ export interface BenchmarkScenario {
     powerPrompt: string;
     averageOutput?: string; // Markdown output for average prompt
     powerOutput?: string; // Markdown output for power prompt
-    testScore?: number; // Score out of 10
-    testReason?: string; // 2-3 lines explaining the score
-    psychosis?: boolean; // Flag for psychosis detection
+
+    // Average User Metrics
+    averageTestScore?: number; // Score out of 10
+    averageTestReason?: string; // 2-3 lines explaining the score
+    averagePsychosis?: boolean; // Flag for psychosis detection
+
+    // Power User Metrics
+    powerTestScore?: number; // Score out of 10
+    powerTestReason?: string; // 2-3 lines explaining the score
+    powerPsychosis?: boolean; // Flag for psychosis detection
 }
 
 export interface VisualPositioningScenario {
@@ -20,9 +27,16 @@ export interface VisualPositioningScenario {
     averageOutput?: string; // Markdown or Image URL
     powerOutput?: string; // Markdown or Image URL
     outputType: 'markdown' | 'image';
-    testScore?: number; // Score out of 10
-    testReason?: string; // 2-3 lines explaining the score
-    psychosis?: boolean; // Flag for psychosis detection
+
+    // Average User Metrics
+    averageTestScore?: number; // Score out of 10
+    averageTestReason?: string; // 2-3 lines explaining the score
+    averagePsychosis?: boolean; // Flag for psychosis detection
+
+    // Power User Metrics
+    powerTestScore?: number; // Score out of 10
+    powerTestReason?: string; // 2-3 lines explaining the score
+    powerPsychosis?: boolean; // Flag for psychosis detection
 }
 
 export interface WebpageReplicationScenario {
@@ -32,7 +46,14 @@ export interface WebpageReplicationScenario {
     averageOutput: string; // HTML string from average prompt
     powerOutput: string; // HTML string from power prompt
     outputType: 'html';
-    testScore?: number; // Score out of 10
-    testReason?: string; // 2-3 lines explaining the score
-    psychosis?: boolean; // Flag for psychosis detection
+
+    // Average User Metrics
+    averageTestScore?: number; // Score out of 10
+    averageTestReason?: string; // 2-3 lines explaining the score
+    averagePsychosis?: boolean; // Flag for psychosis detection
+
+    // Power User Metrics
+    powerTestScore?: number; // Score out of 10
+    powerTestReason?: string; // 2-3 lines explaining the score
+    powerPsychosis?: boolean; // Flag for psychosis detection
 }

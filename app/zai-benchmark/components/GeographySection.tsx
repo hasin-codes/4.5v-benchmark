@@ -96,9 +96,9 @@ function BenchmarkCard({ scenario }: { scenario: BenchmarkScenario }) {
                                 <div className="mt-4 flex justify-between items-end">
                                     <span className="text-[10px] text-white/20 uppercase tracking-widest">Z.ai Response</span>
                                     <TestScore
-                                        score={scenario.testScore}
-                                        reason={scenario.testReason}
-                                        psychosis={scenario.psychosis}
+                                        score={scenario.averageTestScore}
+                                        reason={scenario.averageTestReason}
+                                        psychosis={scenario.averagePsychosis}
                                     />
                                 </div>
                             </div>
@@ -136,9 +136,9 @@ function BenchmarkCard({ scenario }: { scenario: BenchmarkScenario }) {
                                 <div className="mt-4 flex justify-between items-end">
                                     <span className="text-[10px] text-white/20 uppercase tracking-widest">Z.ai Response</span>
                                     <TestScore
-                                        score={scenario.testScore}
-                                        reason={scenario.testReason}
-                                        psychosis={scenario.psychosis}
+                                        score={scenario.powerTestScore}
+                                        reason={scenario.powerTestReason}
+                                        psychosis={scenario.powerPsychosis}
                                     />
                                 </div>
                             </div>
