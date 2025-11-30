@@ -23,15 +23,15 @@ export function VisualPositioningSection({ title, subtitle, scenarios, isDarker 
 
 function VisualPositioningCard({ scenario }: { scenario: VisualPositioningScenario }) {
     const markdownComponents = {
-        h1: ({ node, ...props }: any) => <h1 className="text-xl font-bold text-white mt-4 mb-2" {...props} />,
-        h2: ({ node, ...props }: any) => <h2 className="text-lg font-bold text-white mt-3 mb-2" {...props} />,
-        h3: ({ node, ...props }: any) => <h3 className="text-md font-bold text-white mt-3 mb-1" {...props} />,
-        p: ({ node, ...props }: any) => <p className="mb-4 text-white/80 leading-relaxed" {...props} />,
-        ul: ({ node, ...props }: any) => <ul className="list-disc pl-5 mb-4 space-y-1 text-white/80" {...props} />,
-        ol: ({ node, ...props }: any) => <ol className="list-decimal pl-5 mb-4 space-y-1 text-white/80" {...props} />,
-        li: ({ node, ...props }: any) => <li className="" {...props} />,
-        strong: ({ node, ...props }: any) => <strong className="font-semibold text-white" {...props} />,
-        em: ({ node, ...props }: any) => <em className="italic text-white/90" {...props} />,
+        h1: ({ ...props }: React.HTMLAttributes<HTMLHeadingElement>) => <h1 className="text-xl font-bold text-white mt-4 mb-2" {...props} />,
+        h2: ({ ...props }: React.HTMLAttributes<HTMLHeadingElement>) => <h2 className="text-lg font-bold text-white mt-3 mb-2" {...props} />,
+        h3: ({ ...props }: React.HTMLAttributes<HTMLHeadingElement>) => <h3 className="text-md font-bold text-white mt-3 mb-1" {...props} />,
+        p: ({ ...props }: React.HTMLAttributes<HTMLParagraphElement>) => <p className="mb-4 text-white/80 leading-relaxed" {...props} />,
+        ul: ({ ...props }: React.HTMLAttributes<HTMLUListElement>) => <ul className="list-disc pl-5 mb-4 space-y-1 text-white/80" {...props} />,
+        ol: ({ ...props }: React.HTMLAttributes<HTMLOListElement>) => <ol className="list-decimal pl-5 mb-4 space-y-1 text-white/80" {...props} />,
+        li: ({ ...props }: React.HTMLAttributes<HTMLLIElement>) => <li className="" {...props} />,
+        strong: ({ ...props }: React.HTMLAttributes<HTMLElement>) => <strong className="font-semibold text-white" {...props} />,
+        em: ({ ...props }: React.HTMLAttributes<HTMLElement>) => <em className="italic text-white/90" {...props} />,
     };
 
     const renderOutput = (output: string | undefined, type: 'markdown' | 'image') => {
@@ -72,7 +72,7 @@ function VisualPositioningCard({ scenario }: { scenario: VisualPositioningScenar
     return (
         <div className="group relative">
             {/* Decorative line */}
-            <div className="absolute -left-4 md:-left-12 top-0 bottom-0 w-[1px] bg-gradient-to-b from-white/20 via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+            <div className="absolute -left-4 md:-left-12 top-0 bottom-0 w-px bg-linear-to-b from-white/20 via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
 
             <div className="space-y-8">
                 {/* Header: Search Term */}
@@ -83,7 +83,7 @@ function VisualPositioningCard({ scenario }: { scenario: VisualPositioningScenar
 
                 {/* Chat-style Image Bubble */}
                 <div className="flex justify-start pl-0 md:pl-18">
-                    <div className="relative max-w-md w-full aspect-[4/3] overflow-hidden rounded-3xl rounded-tl-sm bg-[#1a1a1a] border border-white/10 group-hover:border-white/20 transition-colors duration-500 shadow-2xl shadow-black/50">
+                    <div className="relative max-w-md w-full aspect-4/3 overflow-hidden rounded-3xl rounded-tl-sm bg-[#1a1a1a] border border-white/10 group-hover:border-white/20 transition-colors duration-500 shadow-2xl shadow-black/50">
                         {/* Actual Image */}
                         <Image
                             src={scenario.imagePlaceholder}
@@ -94,7 +94,7 @@ function VisualPositioningCard({ scenario }: { scenario: VisualPositioningScenar
                             unoptimized
                         />
                         {/* Gradient Overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent opacity-60" />
+                        <div className="absolute inset-0 bg-linear-to-t from-[#050505] via-transparent to-transparent opacity-60" />
                     </div>
                 </div>
 
@@ -109,8 +109,8 @@ function VisualPositioningCard({ scenario }: { scenario: VisualPositioningScenar
                         </div>
 
                         <div className="space-y-4">
-                            <div className="p-6 rounded-2xl bg-white/[0.02] border border-white/5 backdrop-blur-sm">
-                                <p className="font-serif text-lg italic text-white/80">"{scenario.averagePrompt}"</p>
+                            <div className="p-6 rounded-2xl bg-white/2 border border-white/5 backdrop-blur-sm">
+                                <p className="font-serif text-lg italic text-white/80">&ldquo;{scenario.averagePrompt}&rdquo;</p>
                             </div>
 
                             {/* AI Response */}
@@ -136,8 +136,8 @@ function VisualPositioningCard({ scenario }: { scenario: VisualPositioningScenar
                         </div>
 
                         <div className="space-y-4">
-                            <div className="p-6 rounded-2xl bg-blue-500/[0.03] border border-blue-500/10 backdrop-blur-sm">
-                                <p className="font-serif text-lg italic text-white/90">"{scenario.powerPrompt}"</p>
+                            <div className="p-6 rounded-2xl bg-blue-500/3 border border-blue-500/10 backdrop-blur-sm">
+                                <p className="font-serif text-lg italic text-white/90">&ldquo;{scenario.powerPrompt}&rdquo;</p>
                             </div>
 
                             {/* AI Response */}
