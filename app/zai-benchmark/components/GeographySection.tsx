@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import Image from 'next/image';
 import { BenchmarkScenario } from '../data/types';
 import { TestScore } from './TestScore';
 
@@ -49,10 +50,13 @@ function BenchmarkCard({ scenario }: { scenario: BenchmarkScenario }) {
                 <div className="flex justify-start pl-0 md:pl-18">
                     <div className="relative max-w-md w-full aspect-[4/3] overflow-hidden rounded-3xl rounded-tl-sm bg-[#1a1a1a] border border-white/10 group-hover:border-white/20 transition-colors duration-500 shadow-2xl shadow-black/50">
                         {/* Actual Image */}
-                        <img
+                        <Image
                             src={scenario.imagePlaceholder}
                             alt={scenario.searchTerm}
                             className="w-full h-full object-cover"
+                            width={400}
+                            height={300}
+                            unoptimized
                         />
                         {/* Gradient Overlay */}
                         <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent opacity-60" />

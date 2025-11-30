@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { WebpageReplicationScenario } from '../data/types';
 import { TestScore } from './TestScore';
 
@@ -44,10 +45,13 @@ function WebpageReplicationCard({ scenario }: { scenario: WebpageReplicationScen
 
                         <div className="flex-1 overflow-y-auto custom-scrollbar bg-[#1a1a1a]">
                             <div className="min-h-full flex items-center justify-center p-4">
-                                <img
+                                <Image
                                     src={scenario.imagePlaceholder}
                                     alt="Target Design"
                                     className="max-w-full h-auto object-contain"
+                                    width={800}
+                                    height={600}
+                                    unoptimized
                                 />
                             </div>
                         </div>

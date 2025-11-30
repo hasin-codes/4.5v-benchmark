@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import Image from 'next/image';
 import { VisualPositioningScenario } from '../data/types';
 import { TestScore } from './TestScore';
 
@@ -47,7 +48,14 @@ function VisualPositioningCard({ scenario }: { scenario: VisualPositioningScenar
         if (type === 'image') {
             return (
                 <div className="relative w-full aspect-video rounded-lg overflow-hidden border border-white/10">
-                    <img src={output} alt="Model Output" className="w-full h-full object-cover" />
+                    <Image
+                        src={output}
+                        alt="Model Output"
+                        className="w-full h-full object-cover"
+                        width={800}
+                        height={450}
+                        unoptimized
+                    />
                 </div>
             );
         }
@@ -77,10 +85,13 @@ function VisualPositioningCard({ scenario }: { scenario: VisualPositioningScenar
                 <div className="flex justify-start pl-0 md:pl-18">
                     <div className="relative max-w-md w-full aspect-[4/3] overflow-hidden rounded-3xl rounded-tl-sm bg-[#1a1a1a] border border-white/10 group-hover:border-white/20 transition-colors duration-500 shadow-2xl shadow-black/50">
                         {/* Actual Image */}
-                        <img
+                        <Image
                             src={scenario.imagePlaceholder}
                             alt={scenario.searchTerm}
                             className="w-full h-full object-cover"
+                            width={400}
+                            height={300}
+                            unoptimized
                         />
                         {/* Gradient Overlay */}
                         <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent opacity-60" />
