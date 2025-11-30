@@ -34,7 +34,7 @@ Landmark: Eiffel Tower`,
         {
                 id: "std-2",
                 searchTerm: "Great Wall of China misty morning",
-                imagePlaceholder: "/Images/china.png",
+                imagePlaceholder: "/Images/China.png",
                 averagePrompt: "Guess the location in this image.",
                 powerPrompt: "Examine the terrain, vegetation, and structure in this foggy landscape image. Deduce the location with historical context, specifying continent, country, and specific section if possible. Explain visual cues like wall patterns.",
                 averageOutput: `
@@ -93,7 +93,7 @@ This combination of architectural uniqueness, geographic context, and nearby inf
         {
                 id: "std-4",
                 searchTerm: "Machu Picchu ruins aerial",
-                imagePlaceholder: "/Images/machu.jpg",
+                imagePlaceholder: "/Images/Machu.jpg",
                 averagePrompt: "Identify the place shown here.",
                 powerPrompt: "From this overhead view of ancient stone terraces and mountains, determine the archaeological site. Provide latitude/longitude estimates, country, and cultural significance. Note altitude and flora as clues.",
                 averageOutput: `
@@ -126,12 +126,12 @@ The site is **Machu Picchu**, Peru.
 - Latitude/Longitude: ~-13.1631° S, -72.5450° W  
 - Country: Peru  
 - Cultural Significance: A 15th-century Inca citadel, renowned for its terraced agriculture, stonework, and role as a political/religious center; a UNESCO World Heritage Site and emblem of Inca civilization.`,
-                
+
         },
         {
                 id: "std-5",
                 searchTerm: "Times Square New York rainy day",
-                imagePlaceholder: "/Images/nyc.jpg",
+                imagePlaceholder: "/Images/NYC.jpg",
                 averagePrompt: "Where was this picture captured?",
                 powerPrompt: "Inspect the billboards, crowds, and wet streets in this bustling scene. Pinpoint the exact intersection, city, and country. Discuss how weather affects identification.",
                 averageOutput: `
@@ -154,11 +154,11 @@ To determine the location, analyze key visual cues:
 
 ### Impact of Weather on Identification:
 The wet streets reflect neon lights, enhancing the vibrant atmosphere but not obscuring critical landmarks (e.g., "Times Square" signage, street name). Rain does not alter the identifiable features of Times Square, so weather conditions do not hinder location recognition—instead, they emphasize the area's characteristic luminosity.`,
-                 },
+        },
         {
                 id: "std-6",
                 searchTerm: "Taj Mahal sunrise",
-                imagePlaceholder: "/Images/taj.jpg",
+                imagePlaceholder: "/Images/Taj.jpg",
                 averagePrompt: "What's the location of this monument?",
                 powerPrompt: "Using the dome shape, minarets, and warm lighting, identify this mausoleum. Specify river proximity, city, and country. Include symmetry as a key visual hint.",
                 averageOutput: `
@@ -169,11 +169,11 @@ The monument in the image is the Taj Mahal, which is located in Agra, Uttar Prad
 The mausoleum depicted is the **Taj Mahal**. It features a prominent central dome, four symmetrically placed minarets, and is renowned for its architectural symmetry. The structure is situated in **Agra, India**, adjacent to the **Yamuna River**, and the warm lighting in the image reflects its iconic appearance during sunrise or sunset.
 
 Taj Mahal; Yamuna River; Agra; India; Symmetrical design`,
-                        },
+        },
         {
                 id: "std-7",
                 searchTerm: "Grand Canyon sunset overlook",
-                imagePlaceholder: "/Images/gc.jpg",
+                imagePlaceholder: "/Images/GC.jpg",
                 averagePrompt: "Guess where this is.",
                 powerPrompt: "Analyze rock layers, depth, and color gradients in this canyon image. Determine national park, state, and country. Explain erosion patterns as evidence.",
                 averageOutput: `
@@ -217,11 +217,11 @@ The canyon’s shape and structure reveal key erosional processes:
 
 
 In summary, the image depicts the Grand Canyon in Arizona, USA, where sedimentary rock layers, extreme depth, and vivid color gradients are direct results of millions of years of river erosion and weathering.`,
-       },
+        },
         {
                 id: "std-8",
                 searchTerm: "Mount Fuji cherry blossoms",
-                imagePlaceholder: "/Images/mf.png",
+                imagePlaceholder: "/Images/MF.png",
                 averagePrompt: "What country and landmark is this?",
                 powerPrompt: "From the conical peak and pink flowers, deduce the volcano's location. Include region, country, and seasonal context. Compare to similar mountains.",
                 averageOutput: `
@@ -246,7 +246,7 @@ Mount Fuji’s uniqueness lies in its perfect symmetry, cultural symbolism (cher
 
 
 **Location**: Chūbu region, Japan (specifically near Mount Fuji); **Seasonal Context**: Spring (cherry blossom blooming period).`,
-                 },
+        },
         {
                 id: "std-9",
                 searchTerm: "Colosseum Rome interior",
@@ -277,7 +277,7 @@ City: Rome; Country: Italy; Historical Era: Roman Empire (Flavian period, 1st ce
         {
                 id: "std-10",
                 searchTerm: "Niagara Falls Canadian side",
-                imagePlaceholder: "/Images/niagara.jpg",
+                imagePlaceholder: "/Images/Niagara.jpg",
                 averagePrompt: "Where is this waterfall located?",
                 powerPrompt: "Based on the horseshoe shape and mist, locate this waterfall. Specify border details, countries involved, and viewpoint.",
                 averageOutput: `
@@ -300,11 +300,11 @@ The image’s perspective aligns with views from the **Canadian side** (Ontario)
 
 
 Thus, the waterfall is **Niagara Falls (Horseshoe Falls)**, located on the border between **Canada (Ontario)** and the **United States (New York)**, with the viewpoint typically from the Canadian side.`,
-       },
+        },
         {
                 id: "std-11",
                 searchTerm: "Santorini Greece blue domes",
-                imagePlaceholder: "/Images/santorini.png",
+                imagePlaceholder: "/Images/Santorini.png",
                 averagePrompt: "Guess the island in this photo.",
                 powerPrompt: "Using white buildings, blue roofs, and sea views, identify the island group and country. Provide volcanic history as context.",
                 averageOutput: `
@@ -318,11 +318,11 @@ The image depicts **Santorini**, part of the **Cyclades** island group in **Gree
 
 ### Volcanic History Context:
 Santorini's dramatic landscape is shaped by its volcanic origins. The island is the remnant of a massive volcanic caldera formed by the catastrophic **Minoan eruption** (c. 1600 BCE), one of the largest volcanic events in recorded history. This eruption collapsed the volcano's central cone, creating the iconic caldera cliffs and deep bay seen today. Subsequent smaller eruptions (notably in 1707–1711 CE) further modified the terrain, while ongoing seismic activity highlights the region's active volcanic legacy. The white-washed buildings and blue-domed churches are traditional architectural responses to the island's arid climate and volcanic soil, blending functionality with aesthetic charm against the backdrop of the Aegean Sea.`,
- },
+        },
         {
                 id: "std-12",
                 searchTerm: "Pyramids of Giza camel foreground",
-                imagePlaceholder: "/Images/giza.png",
+                imagePlaceholder: "/Images/Giza.png",
                 averagePrompt: "What ancient site is this?",
                 powerPrompt: "From the triangular structures and desert animal, determine the ancient complex. Include city, country, and pharaoh associations.",
                 averageOutput: `
@@ -340,7 +340,7 @@ The image shows the **Giza Pyramid Complex** in **Giza, Egypt**. This ancient co
 Camels, visible in the foreground, are typical of the Egyptian desert environment surrounding this historic site.  
 
 **Answer:** The ancient complex is the Giza Pyramid Complex in Giza, Egypt, associated with Pharaohs Khufu, Khafre, and Menkaure.`,
-                
+
         }
 ];
 
@@ -483,7 +483,7 @@ This site exemplifies the Khmer’s integration of religious architecture with t
         {
                 id: "tough-5",
                 searchTerm: "Snowy rural road in Norwegian fjord obscured",
-                imagePlaceholder: "/Images/norway.jpg",
+                imagePlaceholder: "/Images/Norway.jpg",
                 averagePrompt: "Where was this picture captured?",
                 powerPrompt: "Inspect the icy path, steep cliffs, and faint water glimpses in this winter scene. Pinpoint the fjord area, region, and country. Discuss how snow cover affects identification and shadow directions for latitude.",
                 averageOutput: `
@@ -513,18 +513,18 @@ Shadows are not clearly visible due to the overcast sky, but two key observation
 In summary, the scene is most consistent with **Norway’s western or central mountainous fjord regions**, where extreme snowfall, alpine terrain, and high-latitude winter conditions dominate. Snow cover complicates detailed landmark identification but reinforces the geographic context of Norway’s wintry, fjord-influenced landscapes.`
         },
 
-{
-    id: "tough-6",
-    searchTerm: "Deserted beach in Patagonia Chile windy",
-    imagePlaceholder: "/Images/Patagonia.jpg",
-    averagePrompt: "What's the location of this coast?",
-    powerPrompt: "Using the rugged pebbles, wind-swept waves, and distant mountains, identify this coastal stretch. Specify subregion, country, and environmental factors like wind erosion. Include ecosystem hints like kelp.",
-    averageOutput: `
+        {
+                id: "tough-6",
+                searchTerm: "Deserted beach in Patagonia Chile windy",
+                imagePlaceholder: "/Images/patagonia.jpg",
+                averagePrompt: "What's the location of this coast?",
+                powerPrompt: "Using the rugged pebbles, wind-swept waves, and distant mountains, identify this coastal stretch. Specify subregion, country, and environmental factors like wind erosion. Include ecosystem hints like kelp.",
+                averageOutput: `
 To determine the location of the coast, analyze visual cues: the beach features pebbles (not sand), clear blue water, a sunny sky, and people engaging in typical beach activities. Pebble beaches are common in temperate regions, particularly in Europe (e.g., the UK, Denmark) or parts of South America. The absence of distinct landmarks makes precise identification challenging, but the overall setting aligns with coastal areas known for pebble shores. Based on typical environments and common beach characteristics, the most plausible location is a temperate coastal region with pebble beaches, such as those found in the United Kingdom (e.g., Brighton) or similar European locales.
 
 The answer is a pebble beach in a temperate coastal region, likely in Europe (e.g., the UK or Denmark)
 `,
-    powerOutput: `
+                powerOutput: `
 To identify the coastal stretch, we analyze the visual cues and ecological/environmental context:
 
 1. Subregion & Country
@@ -542,8 +542,8 @@ Country: Uruguay
 Key Environmental Factors: Wind erosion shaping pebble beaches and dunes; strong onshore winds.
 Ecosystem Hint: Kelp forests in adjacent waters.
 `,
-    psychosis: true
-},
+                psychosis: true
+        },
 
 
         {
@@ -597,12 +597,12 @@ This woodland is likely in **Fiordland or Westland Tai Poutini National Park, So
 
 **Final Answer:**  
 The woodland is located in **Fiordland or Westland Tai Poutini National Park, South Island, New Zealand**. Key evidence includes podocarp trees (iconic to NZ’s temperate rainforests), dense fern undergrowth (adapted to high moisture), and persistent fog (from oceanic influences). Biodiversity is high due to endemism (driven by isolation) and moisture-dependent niches. Compared to similar temperate rainforests (e.g., Pacific Northwest USA/Canada), New Zealand’s forests have greater plant endemism and distinct conifer dominance (podocarps vs. spruces/hemlocks).`,
-    psychosis: true
+                psychosis: true
         },
         {
                 id: "tough-8",
                 searchTerm: "Urban park in Seoul Korea autumn leaves no landmarks",
-                imagePlaceholder: "/Images/Seoul.jpg",
+                imagePlaceholder: "/Images/seoul.jpg",
                 averagePrompt: "What country and area is this?",
                 powerPrompt: "From the ginkgo trees, bench designs, and urban skyline peeks, deduce the park's location. Include district, city, and country. Note seasonal foliage colors and air quality hints.",
                 averageOutput: `
@@ -667,7 +667,7 @@ This analysis aligns with Craco’s iconic status as an abandoned medieval settl
         {
                 id: "tough-10",
                 searchTerm: "Riverbank in Amazon Brazil dense foliage",
-                imagePlaceholder: "/Images/Amazon.jpeg",
+                imagePlaceholder: "/Images/amazon.jpeg",
                 averagePrompt: "Where is this waterway located?",
                 powerPrompt: "Based on the muddy waters, vine tangles, and canopy density, locate this riparian zone. Specify basin tributary, state, and country. Consider biodiversity clues like visible insects or birds.",
                 averageOutput: `
